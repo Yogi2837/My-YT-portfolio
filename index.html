@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="./easy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <h1 class="logo">YOGESHWAR SAI</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#">RESUME</a></li>
+                <li><a href="#">MY PROJECTS</a></li>
+                <li><a href="#contact">CONTACT ME</a></li>
+                <i class="fa-regular fa-circle-xmark fas" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>YogeshwarSai</span><br>From Telangana</h1>
+        </div>
+       </div> 
+    </div>
+    <!-- --------------------------------------About------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./IMG_20220123_161114__1_-removebg-preview.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officia alias, culpa nemo harum sequi suscipit et consectetur id recusandae debitis nostrum vero accusamus perferendis? Repellendus facilis, nihil rerum tempora autem nisi perspiciatis culpa quas dolor repudiandae libero quidem totam non! Soluta accusamus mollitia unde, voluptates commodi eveniet totam sed!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Desiging Web Pages</li>
+                            <li><span>UI UX</span><br>Desiging Web Interfaces</li>
+                            <li><span>SQL</span><br>can handle the database</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-present</span><br>Desiging Web Pages</li>
+                            <li><span>UI UX</span><br>Desiging Web Interfaces</li>
+                            <li><span>SQL</span><br>can handle the database</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2022</span><br>Desiging Web Pages</li>
+                            <li><span>UI UX</span><br>Desiging Web Interfaces</li>
+                            <li><span>SQL</span><br>can handle the database</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------- Contact me-------------------------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> yogeshwarsai3@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8919188249</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-Linkedln"></i></a> -->
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./easyFun.js"></script>
+</body>
+</html>
